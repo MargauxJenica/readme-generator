@@ -12,7 +12,7 @@ inquirer
     {
       type: 'input',
       name: 'description',
-      message: 'Enter a descrition of your project: ',
+      message: 'Enter a description of your project: ',
     },
     {
       type: 'input',
@@ -28,7 +28,7 @@ inquirer
       type: 'list',
       name: 'license',
       message: 'What license does this project use?',
-      choices: ['No License', 'Apache', 'Cloud Native Computing Foundation', 'GNU', 'npm packages', 'OpenBSD', 'Rust', 'WordPress', 'Joomla', 'MIT'],
+      choices: ['No License', 'Apache 2.0', 'GNU GPLv3', 'GNU PLv2', 'ISC', 'MIT'],
     },
     {
       type: 'input',
