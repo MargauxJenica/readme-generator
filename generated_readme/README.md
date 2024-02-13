@@ -1,13 +1,11 @@
- # pro readme
-  ![Static Badge](https://img.shields.io/badge/Apache 2.0-purple)
+ # Professional README.md generator
+  ![Static Badge](https://img.shields.io/badge/GNU-GPLv3-purple)
 
   ## Description
   
-  make proreadme
+  It is a command-line app to dynamically create a professional README file
 
-  ## Table of Contents (Optional)
-  
-  If your README is long, add a table of contents to make it easy for users to find what they need.
+  ## Table of Contents
   
   - [Installation](#installation)
   - [Usage](#usage)
@@ -22,20 +20,20 @@
   
   ## Usage
   
-  enter
+  It is a good way to streamline the creation of your README document
   
   ## License
   
-Apache 2.0
+GNU-GPLv3
   
   ## Tests
 
-  you
+  Answer the questions in the command line to populate a README for your project
 
   ## Questions
 
   Please contact me regarding any inquiries, contact information is provided below:
 
-  GitHub: you
-  Email: me
+  GitHub: MaraguxJenica
+  Email: margaux.moments@gmail.com
   

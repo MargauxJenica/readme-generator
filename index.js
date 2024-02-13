@@ -28,7 +28,7 @@ inquirer
       type: 'list',
       name: 'license',
       message: 'What license does this project use?',
-      choices: ['No License', 'Apache 2.0', 'GNU GPLv3', 'GNU PLv2', 'ISC', 'MIT'],
+      choices: ['No License', 'Apache-2.0', 'GNU-GPLv3', 'GNU-PLv2', 'ISC', 'MIT'],
     },
     {
       type: 'input',
@@ -56,7 +56,9 @@ inquirer
    const readmeGenerator = generateMarkdown(response);
 
  // write to the README.md in the generated_readme folder
- fs.writeFile('./generated_readme/README.md', readmeGenerator, (err) =>
+ fs.writeFile('./generated_readme/README.md', readmeGenerator, (err) =>{
+  console.log('Responses', response);
   err ? console.log(err) : console.log('Success! Your README for your project was created!')
-);
+ });
+
   });

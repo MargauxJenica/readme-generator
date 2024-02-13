@@ -28,9 +28,7 @@ function generateMarkdown(data) {
   
   ${data.description}
 
-  ## Table of Contents (Optional)
-  
-  If your README is long, add a table of contents to make it easy for users to find what they need.
+  ## Table of Contents
   
   - [Installation](#installation)
   - [Usage](#usage)
@@ -67,3 +65,14 @@ ${data.license}
 }
 
 module.exports = generateMarkdown;
+
+
+// Professional README.md generator
+// It is a command-line app to dynamically create a professional README file
+// npm i 
+// It is a good way to streamline the creation of your README document
+//  Apache-2.0
+//  n/a
+//  Answer the questions in the command line to populate a README for your project  
+//  MaraguxJenica
+// margaux.moments@gmail.com

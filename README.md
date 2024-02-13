@@ -12,7 +12,14 @@ The objective of this project is s to build a command-line application that stre
 
 
 ## Final Product
-![asdfghjkl]("images")
+### Command-line with answered prompts
+![command-line with answered prompts](./assests/images/answeredPrompts.png)
+
+### README.md file 
+![README.md file ](./assests/images/readME-file.png)
+
+### Generated README Preview
+![Generated README Preview](./assests/images/generatedREADME.png)
 
 
 ## [README.md Generator](https://margauxjenica.github.io/readme-generator/)
