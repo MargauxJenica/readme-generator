@@ -51,46 +51,54 @@ inquirer
     },
   ])
   .then((response) => {
+    // License drop down
+
+    // template literal of README
+    const readMe = ` # ${response.title}
+
+    ## Description
     
-  const readMe = ` # ${response.title}
+    ${response.description}
 
-  ## Description
-  
-  ${response.description}
+    ## Table of Contents (Optional)
+    
+    If your README is long, add a table of contents to make it easy for users to find what they need.
+    
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contribution](#contribution)
+    - [Tests](#tests)
+    - [Questions](#questions)
+    
+    ## Installation
+    
+    ${response.installation}
+    
+    ## Usage
+    
+    ${response.usage}
+    
+    ## License
+    
+  ${response.license}
+    
+    ## Tests
 
-  ## Table of Contents (Optional)
-  
-  If your README is long, add a table of contents to make it easy for users to find what they need.
-  
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contribution](#contribution)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  
-  ## Installation
-  
-  ${response.installation}
-  
-  ## Usage
-  
-  ${response.usage}
-  
-  ## License
-  
- ${response.license}
-  
-  ## Tests
+    ${response.test}
 
-  ${response.test}
+    ## Questions
 
-  ## Questions
+    Please contact me regarding any inquiries, contact information is provided below:
 
-  Please contact me regarding any inquiries, contact information is provided below:
+    GitHub: ${response.username}
+    Email: ${response.email}
+    
+  `;
 
-  GitHub: ${response.username}
-  Email: ${response.email}
-  
- `;
+ // write to the README.md in the generated_readme folder
+ fs.writeFile('./generated_readme/README.md', readMe, (err) =>
+  err ? console.log(err) : console.log('Success! Your README for your project was created!')
+);
+
   });
