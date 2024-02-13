@@ -1,5 +1,6 @@
 const fs = require('fs'); // imports the fs (file system) library for reading and writing files
 const inquirer = require('inquirer'); // npm package for handling interactive command-line prompts
+const generateMarkdown = require('./utils/generateMarkdown'); // importing the generateMarkdown functionality 
 
 inquirer
   .prompt([ // prompts to be displayed in the command-line interface
@@ -27,7 +28,7 @@ inquirer
       type: 'list',
       name: 'license',
       message: 'What license does this project use?',
-      options: ['No License', 'Apache', 'Cloud Native Computing Foundation', 'GNU', 'npm packages', 'OpenBSD', 'Rust', 'WordPress', 'Joomla', 'MIT'],
+      choices: ['No License', 'Apache', 'Cloud Native Computing Foundation', 'GNU', 'npm packages', 'OpenBSD', 'Rust', 'WordPress', 'Joomla', 'MIT'],
     },
     {
       type: 'input',
@@ -51,54 +52,11 @@ inquirer
     },
   ])
   .then((response) => {
-    // License drop down
 
-    // template literal of README
-    const readMe = ` # ${response.title}
-
-    ## Description
-    
-    ${response.description}
-
-    ## Table of Contents (Optional)
-    
-    If your README is long, add a table of contents to make it easy for users to find what they need.
-    
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contribution](#contribution)
-    - [Tests](#tests)
-    - [Questions](#questions)
-    
-    ## Installation
-    
-    ${response.installation}
-    
-    ## Usage
-    
-    ${response.usage}
-    
-    ## License
-    
-  ${response.license}
-    
-    ## Tests
-
-    ${response.test}
-
-    ## Questions
-
-    Please contact me regarding any inquiries, contact information is provided below:
-
-    GitHub: ${response.username}
-    Email: ${response.email}
-    
-  `;
+   const readmeGenerator = generateMarkdown(response);
 
  // write to the README.md in the generated_readme folder
- fs.writeFile('./generated_readme/README.md', readMe, (err) =>
+ fs.writeFile('./generated_readme/README.md', readmeGenerator, (err) =>
   err ? console.log(err) : console.log('Success! Your README for your project was created!')
 );
-
   });

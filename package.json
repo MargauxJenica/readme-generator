@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/MargauxJenica/readme-generator#readme",
   "dependencies": {
-    "inquirer": "^9.2.14"
+    "inquirer": "^3.3.0"
   }
 }
