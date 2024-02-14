@@ -1,4 +1,4 @@
- # Professional README.md generator
+ # Professional README.md Generator
   ![Static Badge](https://img.shields.io/badge/GNU-GPLv3-purple)
 
   ## Description
@@ -20,7 +20,7 @@
   
   ## Usage
   
-  It is a good way to streamline the creation of your README document
+  It is a good way to streamline the creation of your README for your project
   
   ## License
   
@@ -28,12 +28,12 @@ GNU-GPLv3
   
   ## Tests
 
-  Answer the questions in the command line to populate a README for your project
+  Answer the questions in the command-line to populate a README for your project
 
   ## Questions
 
   Please contact me regarding any inquiries, contact information is provided below:
 
-  GitHub: MaraguxJenica
+  GitHub: MargauxJenica
   Email: margaux.moments@gmail.com
   

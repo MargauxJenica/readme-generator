@@ -23,3 +23,4 @@ The objective of this project is s to build a command-line application that stre
 
 
 ## [README.md Generator](https://margauxjenica.github.io/readme-generator/)
+Link to video walkthrough: https://drive.google.com/file/d/1-ajYx6TLOQqxovJUhUbh3ysMTCbxIdHU/view?usp=drive_link
